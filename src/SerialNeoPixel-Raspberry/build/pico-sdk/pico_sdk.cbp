@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="pico_sdk"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\SDKs\;CMake Files\..\..\..\..\SDKs\pico\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\external\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\platforms\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\platforms\pico\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\toolchains\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\Platform\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\tools\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_base\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_base\include\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_base\include\pico\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\boot_picoboot\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\boot_uf2\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_bit_ops\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_binary_info\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_divider\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_sync\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_time\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_util\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_stdlib\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\boards\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_base\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_claim\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_adc\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_clocks\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_dma\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_divider\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_exception\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_flash\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_gpio\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_i2c\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_interp\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_irq\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_pio\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_pll\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_pwm\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_resets\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_rtc\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_spi\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_sync\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_timer\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_uart\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_vreg\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_watchdog\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_xosc\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_bootrom\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_platform\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\boot_stage2\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_bootsel_via_double_reset\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_multicore\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_unique_id\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_bit_ops\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_divider\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_double\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_int64_ops\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_float\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_mem_ops\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_malloc\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_printf\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio_semihosting\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio_uart\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\cmsis\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\tinyusb\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio_usb\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdlib\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_cxx_options\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_standard_link\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_fix\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_runtime\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2040\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2040\hardware_regs\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2040\hardware_structs\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\rp2040\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\pico_sdk\;CMake Files\..\..\..\..\SDKs\pico\pico-sdk\docs\;CMake Files\build\;CMake Files\build\pioasm\;CMake Files\build\pioasm\tmp\;CMake Files\build\elf2uf2\;CMake Files\build\elf2uf2\tmp\;CMake Files\lib\;CMake Files\lib\pico_neopixels\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bs2_default">
+				<Option output="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPICO_BOARD=&quot;pico&quot;"/>
+					<Add option="-DPICO_NO_HARDWARE=0"/>
+					<Add option="-DPICO_ON_DEVICE=1"/>
+					<Add option="-DPICO_BUILD=1"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2040/hardware_regs/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/hardware_base/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/common/pico_base/include"/>
+					<Add directory="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/generated/pico_base"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/boards/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/pico_platform/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/boot_stage2/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 bs2_default"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bs2_default/fast">
+				<Option output="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPICO_BOARD=&quot;pico&quot;"/>
+					<Add option="-DPICO_NO_HARDWARE=0"/>
+					<Add option="-DPICO_ON_DEVICE=1"/>
+					<Add option="-DPICO_BUILD=1"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2040/hardware_regs/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/hardware_base/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/common/pico_base/include"/>
+					<Add directory="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/generated/pico_base"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/boards/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/pico_platform/include"/>
+					<Add directory="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/boot_stage2/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 bs2_default/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bs2_default_bin">
+				<Option working_dir="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 bs2_default_bin"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bs2_default_padded_checksummed_asm">
+				<Option working_dir="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 bs2_default_padded_checksummed_asm"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pico-sdk/src/rp2_common/boot_stage2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Code/SDKs/pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S">
+			<Option target="bs2_default"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/pico_sdk_init.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/pico_sdk_version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/external/pico_sdk_import.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\external\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/pico_pre_load_platform.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/pico_pre_load_toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/pico_utils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/preload/platforms/rp2040.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\platforms\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/preload/platforms/pico/pico.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\platforms\pico\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/preload/toolchains/find_compiler.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\toolchains\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/preload/toolchains/pico_arm_gcc.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\preload\toolchains\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/cmake/Platform/PICO.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\cmake\Platform\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\tools\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/tools/FindELF2UF2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\tools\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/tools/FindPioasm.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\tools\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/board_setup.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2040.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_base\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_base/generate_config_header.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_base\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_base/include/pico/version.h.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_base\include\pico\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/boot_picoboot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\boot_picoboot\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/boot_uf2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\boot_uf2\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_bit_ops/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_bit_ops\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_binary_info/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_binary_info\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_divider/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_divider\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_sync/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_sync\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_time/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_time\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_util\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/common/pico_stdlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\common\pico_stdlib\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/boards/generic_board.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\boards\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_base\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_claim/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_claim\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_adc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_adc\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_clocks/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_clocks\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_dma/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_dma\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_divider/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_divider\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_exception/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_exception\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_flash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_flash\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_gpio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_gpio\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_i2c/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_i2c\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_interp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_interp\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_irq/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_irq\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_pio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_pio\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_pll/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_pll\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_pwm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_pwm\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_resets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_resets\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_rtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_rtc\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_spi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_spi\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_sync/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_sync\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_timer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_timer\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_uart/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_uart\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_vreg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_vreg\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_watchdog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_watchdog\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/hardware_xosc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\hardware_xosc\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_bootrom/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_bootrom\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_platform/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_platform\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/boot_stage2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\boot_stage2\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_bootsel_via_double_reset\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_multicore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_multicore\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_unique_id/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_unique_id\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_bit_ops/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_bit_ops\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_divider/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_divider\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_double/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_double\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_int64_ops/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_int64_ops\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_float/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_float\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_mem_ops/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_mem_ops\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_malloc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_malloc\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_printf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_printf\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_stdio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_stdio_semihosting/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio_semihosting\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_stdio_uart/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio_uart\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/cmsis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\cmsis\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/tinyusb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\tinyusb\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_stdio_usb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdio_usb\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_stdlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_stdlib\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_cxx_options/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_cxx_options\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_standard_link/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_standard_link\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_fix/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_fix\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2_common/pico_runtime/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2_common\pico_runtime\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2040/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2040\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2040/hardware_regs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2040\hardware_regs\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/src/rp2040/hardware_structs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\src\rp2040\hardware_structs\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/lib/tinyusb/hw/bsp/family_common.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\rp2040\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/pico_sdk_import.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\rp2040\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/boards/pico_sdk/board.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\pico_sdk\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/../../../../SDKs/pico/pico-sdk/docs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\SDKs\pico\pico-sdk\docs\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/tmp/PioasmBuild-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\build\pioasm\tmp\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\build\elf2uf2\tmp\"/>
+		</Unit>
+		<Unit filename="C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/lib/pico_neopixels/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\pico_neopixels\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

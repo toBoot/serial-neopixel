@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/CMakeFiles/PioasmBuild
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/CMakeFiles/PioasmBuild.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/CMakeFiles/PioasmBuild-complete.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule

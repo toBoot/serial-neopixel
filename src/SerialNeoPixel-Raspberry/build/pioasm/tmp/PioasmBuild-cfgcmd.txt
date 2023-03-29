@@ -1,0 +1,1 @@
+cmd='C:/Users/Tobias/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/win/bin/cmake.exe;-GCodeBlocks - MinGW Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

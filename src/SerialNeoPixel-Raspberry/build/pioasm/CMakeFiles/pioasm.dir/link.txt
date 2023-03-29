@@ -1,0 +1,3 @@
+C:\Users\Tobias\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\pioasm.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\pioasm.dir/objects.a @CMakeFiles\pioasm.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -Wl,--whole-archive CMakeFiles\pioasm.dir/objects.a -Wl,--no-whole-archive -o pioasm.exe -Wl,--out-implib,libpioasm.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pioasm.dir\linklibs.rsp

@@ -1,0 +1,3 @@
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/CMakeFiles/pioasm.dir
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Code/Frenco/SerialNeoPixel/src/SerialNeoPixel-Raspberry/build/pioasm/CMakeFiles/rebuild_cache.dir

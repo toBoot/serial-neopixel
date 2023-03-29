@@ -1,0 +1,308 @@
+﻿<Window x:Class="RaspLedController.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RaspLedController"
+        xmlns:colorpicker="clr-namespace:ColorPicker;assembly=ColorPicker"
+        mc:Ignorable="d"
+        Title="Raspberry Led Controller" Height="660" Width="800" ResizeMode="CanMinimize">
+
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BorderBrush="DarkGray" BorderThickness="1" Margin="10" />
+        <Border Grid.Row="2" Grid.RowSpan="22" Grid.Column="2" BorderBrush="DarkGray" BorderThickness="1" Margin="10" />
+        <Border Grid.Row="11" Grid.ColumnSpan="5" BorderBrush="DarkGray" BorderThickness="1" Margin="10" />
+
+
+        <Button Grid.Row="0" Grid.Column="0" Click="ContentButton_OnClick" Content="Connect" />
+        <Button Grid.Row="0" Grid.Column="1" Click="DisconnectButton_OnClick" Content="Disconnect" />
+
+        <Label Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" x:Name="ConnectLabel" Content="Disconnected"
+               Foreground="IndianRed" VerticalContentAlignment="Center" />
+        <ComboBox Grid.Row="0" Grid.Column="5" Margin="5" x:Name="PortComboBox"
+                  DropDownOpened="PortComboBox_OnDropDownOpened" SelectionChanged="PortComboBox_OnSelectionChanged" />
+
+        <Label Grid.Row="1" Content="Led Count:" HorizontalContentAlignment="Right" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="LedCountTextBox" Text="{Binding LedCount}"
+                 TextChanged="TextBox_TextToInt" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                 Margin="5" TextAlignment="Right" />
+
+        <Label Grid.Row="3" Grid.ColumnSpan="2" Content="Color Control" HorizontalContentAlignment="Center" />
+
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal">
+            <Label Content="From LED:" />
+            <Label Content="{Binding LedNumberFrom}" />
+        </StackPanel>
+        <Slider Grid.Row="5" Grid.Column="1" Margin="5" Value="{Binding LedNumberFrom}" Minimum="1"
+                Maximum="{Binding LedCount}" IsSnapToTickEnabled="True" ValueChanged="GeneralSlider_OnValueChanged" />
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal">
+            <Label Content="Count:" />
+            <Label Content="{Binding Count}" />
+        </StackPanel>
+        <Slider Grid.Row="6" Grid.Column="1" Margin="5" Value="{Binding Count}" Minimum="1"
+                Maximum="{Binding LedsLeft}" IsSnapToTickEnabled="True" ValueChanged="GeneralSlider_OnValueChanged" />
+
+        <Label Grid.Row="7" Content="Color: " HorizontalContentAlignment="Right" />
+        <colorpicker:PortableColorPicker Grid.Row="7" Grid.Column="1" BorderBrush="DarkGray" BorderThickness="2"
+                                         ColorChanged="GeneralColorPicker_ColorChanged" SelectedColor="Red" Height="25"
+                                         Margin="5" ToolTip="Click to expand" />
+
+        <Button Grid.Row="8" Click="UpdateLedButton_OnClick" Content="Update Color" />
+        <CheckBox Grid.Column="1" Grid.Row="8" Content="Auto Update" VerticalAlignment="Center" x:Name="AutoUpdade"
+                  Margin="5" Checked="AutoUpdade_OnChecked" />
+
+
+        <CheckBox Grid.Column="0" Grid.Row="9" Content="Fade to Color" VerticalAlignment="Center" x:Name="Fade"
+                  Margin="5" />
+        <Grid Grid.Row="9" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period" Text="{Binding FadePeriod}" TextChanged="TextBox_TextToInt"
+                     VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" VerticalContentAlignment="Center" />
+        </Grid>
+
+
+        <Label Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" Content="Pulse Control"
+               HorizontalContentAlignment="Center" />
+
+
+        <Label Grid.Row="13" Content="Period Up" />
+        <Grid Grid.Row="13" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period Up" Text="{Binding PulsePeriodUp}" TextChanged="TextBox_TextToInt"
+                     VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" VerticalContentAlignment="Center" />
+        </Grid>
+
+
+        <Label Grid.Row="14" Content="Period Hold Up" />
+        <Grid Grid.Row="14" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period Hold Up" Text="{Binding PulsePeriodHoldUp}"
+                     TextChanged="TextBox_TextToInt" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" VerticalContentAlignment="Center" />
+        </Grid>
+
+
+        <Label Grid.Row="15" Content="Period Down" />
+        <Grid Grid.Row="15" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period Down" Text="{Binding PulsePeriodDown}"
+                     TextChanged="TextBox_TextToInt" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" VerticalContentAlignment="Center" />
+        </Grid>
+
+        <Label Grid.Row="16" Content="Period Hold Down" />
+        <Grid Grid.Row="16" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period Hold Down" Text="{Binding PulsePeriodHoldDown}"
+                     TextChanged="TextBox_TextToInt" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" VerticalContentAlignment="Center" />
+        </Grid>
+
+        <Label Grid.Row="17" Content="Pulse count (0 = ∞)" />
+        <TextBox Grid.Row="17" Grid.Column="1" ToolTip="Period" Text="{Binding PulseCount}"
+                 TextChanged="TextBox_TextToInt" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                 Margin="5" TextAlignment="Right" />
+
+
+        <CheckBox Grid.Column="0" Grid.Row="18" Content="Finish Pulse Up" VerticalAlignment="Center" x:Name="finishFadeUpCheckBox" Margin="5" />
+        <Label Grid.Row="18" Content="Color: " HorizontalContentAlignment="Right" HorizontalAlignment="Right" />
+        <colorpicker:PortableColorPicker Grid.Row="18" Grid.Column="1" BorderBrush="DarkGray" BorderThickness="2"
+                                         ColorChanged="PulseColorPicker_ColorChanged" SelectedColor="Blue" Height="25"
+                                         Margin="5" ToolTip="Click to expand" />
+
+        
+        <Button Grid.Row="19" Grid.Column="0" Content="Start Pulse" Click="StartPulse_OnClick" />
+        <Button Grid.Row="19" Grid.Column="1" Content="Stop Pulse" Click="StopPulse_OnClick" />
+        <Button Grid.Row="20" Grid.Column="0" Content="Finish Pulse Up" Click="FinishPulseUp_OnClick" />
+        <Button Grid.Row="20" Grid.Column="1" Content="Finish Pulse Down" Click="FinishPulseDown_OnClick" />
+
+        
+        
+
+        <Label Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Content="Gradient Control"
+               HorizontalContentAlignment="Center" />
+
+
+        <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal">
+            <Label Content="From LED:" />
+            <Label Content="{Binding GradientLedNumberFrom}" />
+        </StackPanel>
+        <Slider Grid.Row="5" Grid.Column="4" Margin="5" Value="{Binding GradientLedNumberFrom}" Minimum="1"
+                Maximum="{Binding LedCount}" IsSnapToTickEnabled="True" ValueChanged="GradientSlider_OnValueChanged" />
+
+        <StackPanel Grid.Row="6" Grid.Column="3" Orientation="Horizontal">
+            <Label Content="Count:" />
+            <Label Content="{Binding GradientCount}" />
+        </StackPanel>
+        <Slider Grid.Row="6" Grid.Column="4" Margin="5" Value="{Binding GradientCount}" Minimum="1"
+                Maximum="{Binding GradientLedsLeft}" IsSnapToTickEnabled="True"
+                ValueChanged="GradientSlider_OnValueChanged" />
+
+        <Label Grid.Row="7" Grid.Column="3" Content="From Color: " HorizontalContentAlignment="Right" />
+        <colorpicker:PortableColorPicker Grid.Row="7" Grid.Column="4" BorderBrush="DarkGray" BorderThickness="2"
+                                         ColorChanged="GradientFromColor_ColorChanged" SelectedColor="Red" Height="25"
+                                         Margin="5" ToolTip="Click to expand" />
+
+        <Label Grid.Row="8" Grid.Column="3" Content="To Color: " HorizontalContentAlignment="Right" />
+        <colorpicker:PortableColorPicker Grid.Row="8" Grid.Column="4" BorderBrush="DarkGray" BorderThickness="2"
+                                         ColorChanged="GradientToColor_ColorChanged" SelectedColor="Blue" Height="25"
+                                         Margin="5" ToolTip="Click to expand" />
+
+        <Button Grid.Row="9" Grid.Column="3" Click="UpdateGradient_OnClick" Content="Update Gradient" />
+        <CheckBox Grid.Column="4" Grid.Row="9" Content="Auto Update" x:Name="GradientAutoUpdate"
+                  VerticalAlignment="Center" Margin="5" Checked="AutoUpdateGradient_OnChecked" />
+
+
+        <CheckBox Grid.Column="3" Grid.Row="10" Content="Fade to Gradient" VerticalAlignment="Center"
+                  x:Name="GradientFade" Margin="5" />
+        <Grid Grid.Row="10" Grid.Column="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period" Text="{Binding GradientFadePeriod}"
+                     TextChanged="TextBox_TextToInt" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" VerticalContentAlignment="Center" />
+        </Grid>
+
+
+        <Label Grid.Row="12" Grid.ColumnSpan="2" Grid.Column="3" Content="Cycle Control"
+               HorizontalContentAlignment="Center" />
+
+
+        <Button Grid.Row="13" Grid.Column="3" Content="Start Cycle" Click="StartCycle_OnClick" />
+        <Grid Grid.Row="13" Grid.Column="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" ToolTip="Period" Text="{Binding CyclePeriod}" TextChanged="TextBox_TextToInt"
+                     VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="5" TextAlignment="Right" />
+            <Label Grid.Column="1" Content="ms" Margin="5" VerticalContentAlignment="Center" />
+        </Grid>
+        <CheckBox x:Name="InverseDirection" Grid.Row="14" Grid.Column="3" Content="Inverse Direction"
+                  VerticalAlignment="Center" Margin="5" />
+        <Button Grid.Row="15" Grid.Column="3" Content="Stop Cycle" Click="StopCycle_OnClick" />
+        <Button Grid.Row="15" Grid.Column="4" Content="Finish Cycle" Click="FinishCycle_OnClick" />
+
+
+        <Border Grid.Column="3" Grid.Row="16" Grid.ColumnSpan="2" BorderBrush="DarkGray" BorderThickness="1" Height="2"
+                Margin="10" />
+
+
+        <Label Grid.Row="17" Grid.ColumnSpan="2" Grid.Column="3" Content="General Control and Info"
+               HorizontalContentAlignment="Center" />
+
+        <Button Grid.Row="18" Grid.Column="3" Grid.ColumnSpan="2" Click="SwitchLedOffButton_OnClick"
+                Content="Switch LEDs Off" />
+
+        <Button Grid.Row="19" Grid.Column="3" Content="Stop All Actions" Click="StopAllActions_OnClick" />
+        <Button Grid.Row="19" Grid.Column="4" Content="Finish All Actions" Click="FinishAllActions_OnClick" />
+
+        <Button Grid.Row="20" Grid.Column="3" Content="Get LED Info" Click="GetLedInfo_OnClick" />
+        <TextBox Grid.Row="20" Grid.Column="4" Text="{Binding LedInfoNumber}" VerticalAlignment="Center"
+                 VerticalContentAlignment="Center" Margin="5" TextAlignment="Right" ToolTip="Led Number for Info" />
+
+        
+        <Grid Grid.Row="21" Grid.Column="3" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Column="0" Content="Red:" HorizontalContentAlignment="Right" />
+            <Label Grid.Column="1" Content="{Binding InfoRed}" />
+
+            <Label Grid.Column="2" Content="Green:" HorizontalContentAlignment="Right" />
+            <Label Grid.Column="3" Content="{Binding InfoGreen}" />
+
+            <Label Grid.Column="4" Content="Blue:" HorizontalContentAlignment="Right" />
+            <Label Grid.Column="5" Content="{Binding InfoBlue}" />
+            
+        </Grid>
+
+    </Grid>
+</Window>
