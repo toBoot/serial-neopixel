@@ -59,7 +59,7 @@ Der Befehl `>Clear();` liefert z.B. `>true\r\n` bzw. `>false\r\n` zurück.
 # RaspLedController Programm
 RaspLedController ist ein Programm, mit dem sich über eine Oberfläche eine Verbindung zum Raspberry Pi Pico aufbauen lässt. Es sind alle Funktionen, die vom RPI unterstützt werden, implementiert.
 
-![RaspLedControllerScreenshot](https://git.massivebytes.net/Frenco/SerialNeoPixel/raw/branch/main/docs/RaspLedControllerScreenshot.png)
+![RaspLedControllerScreenshot](docs/RaspLedControllerScreenshot.png)
 
 <br/>
 
